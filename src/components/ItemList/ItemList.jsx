@@ -1,11 +1,9 @@
 import React from 'react'
-import prox from "./assets/proximamente.png"
+import { Item } from '../Item/Item'
 
-export const ItemList = (props) => {
+
+export const ItemList = ({products}) => {
   return (
-    <article> 
-        <img src={prox} alt="" />
-        <p className='prdDescription'>{props.detalle}</p>
-    </article>
+    products.map((prd)=> <Item key={prd.id} producto={prd}></Item>)
   )
 }

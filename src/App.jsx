@@ -1,6 +1,6 @@
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer"
 import { Navbar } from "./components/Navbar/Navbar"
-import "./style.scss"
+import "./style.sass"
 
 function App() {
   
@@ -8,7 +8,8 @@ function App() {
   return (
    <>
       <Navbar></Navbar>
-      <ItemListContainer detalle="Todavia no tenemos nada cargado"></ItemListContainer>
+      <ItemListContainer></ItemListContainer>
+      
    </>
    
   )
