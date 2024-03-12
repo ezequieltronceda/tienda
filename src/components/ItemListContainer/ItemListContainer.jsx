@@ -3,19 +3,12 @@ import { ItemList } from '../ItemList/ItemList'
 import { productos } from '../../data/data'
 import { Loader } from '../Loader/Loader'
 
+import { usePromise } from '../Hooks/usePromise'
+
 export const ItemListContainer = (props) => {
-  const [misProductos, setMisProductos] = useState([])
+  const {misProductos} = usePromise(productos)
   const [loading, setLoading] = useState(false)
-  const promesa = new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(productos)
-    }, 2000);
-  })
-  useEffect(()=>{
-    promesa.then(data=>{setMisProductos(data)
-    })
-  
-  },[])
+
   useEffect(()=> {
     setLoading(!loading)
   }, [misProductos])
