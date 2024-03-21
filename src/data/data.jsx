@@ -17,7 +17,7 @@ export const productos = [
           "descripcion": "Descubre el poder regenerador de nuestra crema hidratante de castor. Formulada con aceite de castor, esta crema proporciona una hidratación profunda y duradera, mientras que sus propiedades calmantes y nutritivas ayudan a restaurar la barrera natural de la piel. Deja tu piel con una sensación de suavidad y elasticidad renovada.",
         },
         {
-          "nombre": "locion hidratante lavanda",
+          "nombre": "Locion hidratante lavanda",
           "precio": 11000.00,
           "imagen": "https://i.ibb.co/8D9S4RL/crh3.jpg",
           "id":3,
