@@ -14,11 +14,16 @@ nav
     &:hover
       transform: scale(1.1)
 
+  .logo
+    position: relative
+    right: 5%
+
   ul
     display: flex
     justify-content: space-evenly
     width: calc(100% - 105px)
-    li
+    .link
+      text-decoration: none
       list-style: none
       color: #ffffff
       transition: all 0.2s
@@ -44,3 +49,9 @@ nav
     position: relative
     right: 20%
     border-radius: 10px
+.link.active
+  color: #000
+  transition: none
+  cursor: default
+  &:hover
+    transform: none
